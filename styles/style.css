@@ -15,6 +15,7 @@
   align-items: center;
   padding: 0;
   overflow: hidden;
+  z-index: 1;
 }
 
 .logo_place_header {
@@ -29,7 +30,6 @@
   width: 730px;
   line-height: 96px;
   font-size: 102px;
-  z-index: 4;
   margin: 0 0 0 64px;
   font-weight: bold;
 }
@@ -40,7 +40,6 @@
   bottom: 30px;
   width: 388px;
   margin: 0;
-  z-index: 3;
   line-height: 25px;
   font-size: 18px;
 }
@@ -50,13 +49,17 @@
   color: #2f80ed;
 }
 
+.header__link:hover {
+  text-decoration: underline;
+}
+
 .header__main-illustration {
   position: absolute;
   width: 765px;
   height: 608px;
   right: 0;
   bottom: 0;
-  z-index: 2;
+  z-index: -1;
 
 }
 
@@ -67,7 +70,7 @@
   position: absolute;
   right: 0;
   top: 64px;
-  z-index: 1;
+  z-index: -2;
   
 }
 
@@ -176,13 +179,13 @@
   display: flex;
   flex-direction: column;
   min-height: 790px;
+  z-index: 1;
 }
 
 .feynman__title {
   line-height: 1.15;
   font-size: 120px;
   font-weight: bold;
-  z-index: 4;
   margin: 0 auto 70px;
   width: 648px;
   text-align: center;
@@ -192,7 +195,6 @@
 .feynman__subtitle {
   line-height: 51px;
   font-size: 36px;
-  z-index: 3;
   margin: 0;
   text-align: center;
 }
@@ -202,11 +204,14 @@
   font-size: 36px;
   text-decoration: none;
   color: #2f80ed;
-  z-index: 2;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   right: 48px;
+}
+
+.feynman__link:hover {
+  text-decoration: underline;
 }
 
 .feynman__image {
@@ -215,7 +220,7 @@
   left: 0;
   width: 867px;
   height: 637px;
-  z-index: 1;
+  z-index: -1;
 }
 
 .kaufman {
@@ -225,6 +230,7 @@
   display: flex;
   flex-direction: column;
   padding: 90px 0;
+  z-index: 1;
 }
 
 .kaufman__triangle {
@@ -235,17 +241,15 @@
   height: 877px;
   right: -210px;
   top: 0;
-  z-index: 1;
+  z-index: -1;
 }
 
 .section-title_theme_dark {
   color: white;
-  z-index: 2;
 }
 
 .section-subtitle_theme_dark {
   color: white;
-  z-index: 2;
 }
 
 .table__cell_theme_dark {
@@ -253,7 +257,6 @@
   color: white;
   margin-right: 0;
   margin-top: 80px;
-  z-index: 3;
 }
 
 .footer {
@@ -310,6 +313,10 @@
 .footer__link {
   text-decoration: none;
   color: white;
+}
+
+.footer__link:hover {
+  text-decoration: underline;
 }
 
 .footer__social-icon {
