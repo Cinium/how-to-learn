@@ -281,7 +281,7 @@
   flex-direction: column;
   justify-content: space-between;
   flex-basis: 711px;
-  align-items: flex-start;
+  align-items: flex-start; /* comment */
 }
 
 .logo__place_footer {
