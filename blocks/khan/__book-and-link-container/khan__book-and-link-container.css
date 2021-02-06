@@ -1,0 +1,7 @@
+.khan__book-and-link-container {
+    min-width: 620px;
+    height: 608px;
+    margin: 0;
+    display: flex;
+    overflow: hidden;
+}

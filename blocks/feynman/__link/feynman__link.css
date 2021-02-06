@@ -7,8 +7,10 @@
     top: 50%;
     transform: translateY(-50%);
     right: 48px;
+    transition: .2s linear;
   }
   
 .feynman__link:hover {
     text-decoration: underline;
+    opacity: .75;
   }
